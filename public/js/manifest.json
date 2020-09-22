@@ -1,0 +1,14 @@
+{
+    "name": "Book Keeping",
+    "short_name": "BookKeeping",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background-color": "#ffe9d2",
+    "theme_color": "#ffe1c4",
+    "orientation": "portrait-primary",
+    "icons":[{
+        "src": "/image/icons/nnn.png",
+        "type":"image/png"
+    }]
+
+}

@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    margin:0;
+    background-color: #cec3c34f;
+}
+.container-login{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+
+}
+fieldset{
+    width: 300px;
+    margin: auto;
+    padding: 10px 10px;
+    border-style:outset;
+    background-color: transparent;
+}

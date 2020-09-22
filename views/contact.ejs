@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="apple-touch-icon" sizes="76x76" href="../image/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../image/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../image/icons/favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+ </head>
+    <body>
+            <div class="container-login">
+                <fieldset>
+            <form class="form">
+                    <div class="form-group">
+                <label for="input">Name</label>
+                <input type="text" name="name" class="form-control" id="input" maxlenght="20" oninput="formGo()">
+                <p id="report"></p>
+                </div>
+                <div class="form-group">
+                <label for="input-mail">Mail</label>
+                <input type="text" name="email" class="form-control" id="email" oninput="emailVerify()">
+                <p id="report1"></p>
+                </div>
+                <div class="form-group">
+                        <label for="input-tel">Telphone</label>
+                        <input name="tel" class="form-control" id="number" oninput="telephone()">
+                        <p id="report2"></p>
+                        </div>
+                <div class="form-group">
+                <label for="input-message">Your Message</label>
+                <textarea name="message" cols="30" rows="10" class="form-control" id="message" oninput="Message()"></textarea>
+                <p id="report3"></p>
+                </div>
+                <button type="submit" id="btn" class="btn btn-primary" disabled>Submit</button>
+                
+            </form>
+            </fieldset>
+            </div>
+        
+        <script src="../js/validation.js></script>
+    </body>
+</html>

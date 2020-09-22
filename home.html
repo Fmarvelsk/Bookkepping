@@ -1,0 +1,273 @@
+<html>
+
+    <link rel="stylesheet" type="text/css" href="Crlab.css">
+    <head>
+            <meta charset="utf-8">
+    
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    
+        <body>
+                
+                        <header class="container">
+                          <nav>
+        <div class="logo">
+            <h4>CSLAB</h4>
+        </div> 
+        <ul class="navlinks">
+                <li><a href="#home" title="Home">HOME</a></li>
+                <li><a href="#staff" title="Staff">STAFF</a></li>
+                <li><a  href="#contact" title="Contact">CONTACT US</a></li>
+                <li><a  href="#about" title="About">ABOUT</a></li>
+                <li><a  href="#interns" title="Interns">INTERNS</a></li>
+                <li><a href="#login" title="Member">LOGIN</a></li>
+              </ul>
+              <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+    </nav>      
+<div class="slideshow-container">
+
+                <div class="mySlides">
+                  <img src="../image/news.jpg" width="100%">
+                  <div class="centered fade"><h1>HELLO WELCOME TO CRLAB</h1></div>
+                </div>
+                
+                <div class="mySlides">
+                  <img src="../image/news.jpg" width="100%">
+                  <div class="centered fade"><h1>The best place to find tech-preneurs</h1></div>
+                </div>
+                
+                <div class="mySlides">
+                  <img src="../image/news.jpg" width="100%">
+                  <div class="centered">Caption Three</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center" class="cent">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                </header>
+                <div class="try">
+<div class="margin-left">
+    <h1 class="cyber" id="home">CYBERSECURITY RESEARCH LABORATORY</h1>
+  <img src="../image/Slideshow.jpeg" style="float:left; width:404px;height:450px;">
+  <div class="one">
+    <h3>Introduction</h3>
+  <p>The purpose of cybersecurity is to help prevent cyberattacks, data breaches and identity theft and can aid in risk management. When an organization has a strong sense of network security and an effective incident response plan, it is better able to prevent and mitigate cyber-attacks.
+    <h3>Software incubation hub</h3>
+    <p>As part of our contribution to the global community, we train young novices into experts in the various software design and engineering patterns and techniques, accross different languages and platforms.</p>
+  
+  </p>
+</div>
+</div>
+    <div class="margin-next">
+        <img src="../image/c.jpg" style= "float:left; width:404px; height:450px">
+        <div class="one">
+    <h3> Internet and Web Security </h3>
+    <p>
+        We sensitize and train members of the University community and Nigeria as a nation about current trends in security threats and vulnerabilities, and especially how we can collectively mitigate them. We also analyse and evaluate high value websites against standards compliance and security vulnerability.
+        </p>
+        <h3>Secure Project deployment</h3>
+            
+            <p>
+            The Cyber Security Laboratory is committed to ensuring a positive turnaround in Nigeria's approach to technology by accepting technological projects, challenges and competitions, and deploying pace-setting innovations accross a variety of sectors..
+            </p>
+      </div>
+</div>
+<div class="row" id="about">
+  <h1 class="pad">About Us</h1>
+  <p class="pi">Here at cybersecurity not only are we an establishment interseted in cybersecurity but also we deal with software engineering and any technological areas</p>
+  <div class="column">
+    <h2>Artificial intelligence (AI)</h2>
+    <p>We have teams who specializes in AI in the simulation of human intelligence processes by machines, especially computer systems. These set of teams work on the acquisition of information and rules for using the reasoning and self-correction in making a machine that can think on it own and act on it.The department also take in interns in which the interns can gain knowledge from them and build on their skilss</div>
+  
+  <div class="column">
+    <h2>Software Development</h2>
+    <p>The Software teams work together in conceiving, specifying, designing, programming, documenting, testing, and also fixing of bug involved in creating and maintaining applications, frameworks, or other software components.Here we tend to meet specific needs of a specific client/business to meet a perceived need of some set of potential users or for personal use. Using programming language like python, javascript, java, C++ e.t.c</div>
+  
+  <div class="column">
+    <h2>Digital Marketing</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+<div class="clear" id="staff">
+  <h1 class="team">Meet the teams</h1>
+<div class="new">
+  <img class="img" src="../image/profile.jpg" width="350" height="auto">
+  <div class="desu">Name</div>
+</div>
+<div class="new">
+    <img class="img" src="../image/profile.jpg"width="350" height="auto">
+    <div class="desu">Name</div>
+  </div>
+  <div class="new">
+      <img class="img" src="../image/profile.jpg"width="350" height="auto">
+      <div class="desu">Mr Damilare hvvhvhv</div>
+    </div>
+    <div class="new">
+        <img class="img" src="../image/profile.jpg"width="350" height="auto">
+        <div class="desu">Dr Tope Aladesanmi</div>
+      </div>
+      <div class="new">
+          <img class="img" src="../image/profile.jpg"width="350" height="auto">
+          <div class="desu">Dr Tope Aladesanmi</div>
+        </div>
+        <div class="new">
+            <img class="img" src="../image/profile.jpg"width="350" height="auto">
+            <div class="desu">Dr Tope Aladesanmi</div>
+          </div>
+      
+    </div>
+
+
+    <div class="clear" id="interns">
+        <h1 class="te">Brain Unite</h1>
+        <p></p>
+        <h2 class="center">Meet our interns</h2>
+      <div class="new">
+        <img class="img" src="../image/marv.jpg" width="350" height="auto">
+        <div class="desu">Name</div>
+      </div>
+      <div class="new">
+          <img class="img" src="../image/marv.jpg"width="350" height="auto">
+          <div class="desu">Name</div>
+        </div>
+        <div class="new">
+            <img class="img" src="../image/marv.jpg"width="350" height="auto">
+            <div class="desu">Barnabas</div>
+          </div>
+          <div class="new">
+              <img class="img" src="../image/marv.jpg"width="350" height="auto">
+              <div class="desu">Jide-Filani Marvellous</div>
+            </div>
+            <div class="new">
+                <img class="img" src="../image/profile.jpg"width="350" height="auto">
+                <div class="desu">Dr Tope Aladesanmi</div>
+              </div>
+              <div class="new">
+                  <img class="img" src="../image/profile.jpg"width="350" height="auto">
+                  <div class="desu">Dr Tope Aladesanmi</div>
+                </div>
+            
+              </div>
+             
+                   <div class="border" >
+                   <div class="colum">
+                      <h2>Breaking </h2>
+                      <p>Interested in joining our organization and learning more about us just click on the link below </p>
+                      <div>
+                        <input id="button" value="LEARN MORE">
+                      </div>
+                      </div>
+                      <div class="colum" id="login">
+                      <h2 class="center">Already a member</h2>
+                      <div>
+                        <fieldset class="set">
+          
+                      
+                            <div class="details">Sign In</div>
+            
+                           
+                            <form class="color">
+                                    <div>
+                                            <input type="text" id="di" placeholder="Enter name" >
+                                            <input type="text" id="di" placeholder="Password">
+                                    </div>
+                                            <div>
+                                              <input type=button value="LOGIN">
+                                              </div>
+                                              <div class="y">
+                                          <a class="password" href>Forgot Password</a>
+                                      </div>
+                           
+                             </form>
+                             </fieldset>
+                             </div>
+                             </div>
+                   </div>
+            <footer>
+                  <div class="colu" id="contact">
+                    <h2>Contact Us</h2>
+                    <ol class="no">
+                        <li class="lit">Telephone: 09055552275 </li>
+                        <li class="lit"><a href="gmail.com">Gmail.com: Work@gmail.com </a></li>
+                        <li class="lit"><a href="twitter.com">Twitter: Work@twitter.com</a></li>
+                        <li class="lit"><a href="linkedln.com"> Work@LinkedIn.com</a></li>
+                        <li></li>
+                      </ol>
+                    </div>
+                  <div class="colu">
+                    <h2>Company</h2>
+                    <ol class="no">
+                        <li class="lit"><a href=".com">Terms</a></li>
+                        <li class="lit"><a href="linkedln.com">Conditions</a></li>
+                        <li class="lit"><a href="linkedln.com">Blog</a></li>
+                        <li class="lit"><a href="google.com">Browse</a></li>
+                        <li class="lit"><a href="linkedln.com">Services</a></li>
+                    
+                  </div>
+                  
+                  <div class="colu">
+                      <h2>Company</h2>
+                      <ol class="no">
+                          <li class="lit"><a href="linkedln.com">Rules</a></li>
+                          <li class="lit"><a href="">Timetable</a></li>
+                          <li class="lit"><a href="">Blog</li>
+                          <li class="lit"><a href="">Browse</li>
+                          <li class="lit">Location: Obafemi Awolowo University</li>
+                        
+                      </div>
+                </div>
+                
+
+          </footer>
+
+
+
+
+
+
+            </body>
+            </html>
