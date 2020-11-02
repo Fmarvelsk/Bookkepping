@@ -1,8 +1,8 @@
 const passport = require('passport');
 const User = require('../models/schemas')
-require('./Strategic')
 
-function passportUser(app){
+
+const passportUser = (app) => {
     app.use(passport.initialize())
     app.use(passport.session())
 
@@ -15,6 +15,7 @@ function passportUser(app){
              done(err, user);
             })
         })
+require('./Strategic')
 
 }
 

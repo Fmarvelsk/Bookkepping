@@ -8,16 +8,26 @@ body{
 }
 .container-login{
     display:flex;
-    flex-wrap:wrap;
     justify-content: center;
     align-items: center;
     padding:15px;
+    flex-direction: column;
+    align-items : center;
+    margin-top: 20px;
 
 }
-fieldset{
-    width: 300px;
+h3 {
+    margin-bottom: 35px
+}
+.set{
+    width: 320px;
     margin: auto;
     padding: 10px 10px;
-    border-style:outset;
-    background-color: transparent;
+    background-color:#ffffff;
+    text-align: center;
+    border: 1px solid cornsilk 
 }
+.warning{
+    color: red;
+}
+

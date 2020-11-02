@@ -51,11 +51,12 @@ function formGo(){
 function telephone(){
     number=document.getElementById('number').value;
     text = document.getElementById('report2');
-    if(isNaN(number) ){
-report= "Enter number";
+    if(isNaN(number) || number.length != 11){
+report= "Enter valid number";
     }
     else{
         report="";
+        
 
 } 
 text.innerHTML = report;   
