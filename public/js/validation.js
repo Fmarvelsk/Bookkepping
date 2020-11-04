@@ -9,11 +9,12 @@ var number= document.getElementById('number');
 var text;
 var report;
 var button = function (){ 
-    if(input.value!=="" && regEx.test(email.value) && isNaN(number.value)==false && message.value!==""){
+    if(input.value!=="" || regEx.test(email.value) || isNaN(number.value)==false || message.value!==""){
         btn.disabled = false;
     }
     else{
         btn.disabled =true;
+        
     }
 };
 input.addEventListener('blur', button);
