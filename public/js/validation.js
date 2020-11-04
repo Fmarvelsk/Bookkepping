@@ -38,7 +38,7 @@ function formGo(){
      console.log('report');
     }
 
- function emailVerify(){
+function emailVerify(){
      text= document.getElementById('report1');
      if(regEx.test(email.value)==false){
          report="Enter a valid email"; 

@@ -19,7 +19,7 @@ mongoose.connect(url, {useNewUrlParser: true,useUnifiedTopology: true})
 .then(function(){
     console.log('Connected to Database')
 })
-.catch(Error, function(err){
+.catch( function(err){
     console.log('Error connecting to database', err)
 })
 

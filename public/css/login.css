@@ -4,7 +4,9 @@
 body{
     width:100%;
     margin:0;
-    background-color: #cec3c34f;
+    background-image: url(https://assets.weimgs.com/weimgs/rk/images/wcm/products/202040/0287/zane-wide-bookshelf-white-o.jpg);
+    
+
 }
 .container-login{
     display:flex;
